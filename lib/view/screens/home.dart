@@ -7,7 +7,8 @@ class HomeScreenPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("WhatsApp Ui"),
+        title: const Text("WhatsApp Ui",),
+        backgroundColor: Colors.teal,
       ),
       body: Column(
         children: [
