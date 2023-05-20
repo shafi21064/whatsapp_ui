@@ -5,6 +5,26 @@ class HomeScreenPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("WhatsApp Ui"),
+      ),
+      body: Container(
+        child: ListView.builder(
+          itemCount: 100,
+          itemBuilder: (context, index) {
+            return const ListTile(
+              leading: CircleAvatar(
+                backgroundImage: NetworkImage(
+                    'https://cdn.pixabay.com/photo/2017/06/13/13/06/girl-2398822_960_720.jpg'),
+              ),
+              title: Text('MD Shadikul Islam Shafi'),
+              subtitle: Text('App developer'),
+              trailing: Text('3.15'),
+            );
+          },
+        ),
+      ),
+    );
   }
 }
