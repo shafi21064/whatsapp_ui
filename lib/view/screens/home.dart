@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 
 class HomeScreenPage extends StatelessWidget {
+
+  static const String id = 'home';
+
   const HomeScreenPage({Key? key}) : super(key: key);
 
   @override
