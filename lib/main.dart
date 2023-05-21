@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:whatsapp_ui/view/screens/home.dart';
+import 'package:whatsapp_ui/view/screens/main_screen.dart';
+import 'package:whatsapp_ui/view/screens/sub_screen/home.dart';
 import 'package:whatsapp_ui/view/screens/sub_screen/screen_one.dart';
 import 'package:whatsapp_ui/view/screens/sub_screen/screen_two.dart';
 
@@ -14,9 +15,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(),
-      initialRoute: ScreenOne.id,
+      theme: ThemeData(
+        primarySwatch: Colors.teal
+      ),
+      initialRoute: MainScreen.id,
       routes: {
+        MainScreen.id: (context) => const MainScreen(),
         ScreenOne.id: (context) => const ScreenOne(),
         ScreenTwo.id: (context) => const ScreenTwo(),
         HomeScreenPage.id: (context) => const HomeScreenPage(),

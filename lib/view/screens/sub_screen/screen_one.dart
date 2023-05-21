@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:whatsapp_ui/view/screens/home.dart';
+import 'package:whatsapp_ui/view/screens/sub_screen/home.dart';
 import 'package:whatsapp_ui/view/screens/sub_screen/screen_two.dart';
 
 class ScreenOne extends StatelessWidget {
