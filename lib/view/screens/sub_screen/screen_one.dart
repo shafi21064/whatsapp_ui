@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:whatsapp_ui/view/screens/sub_screen/home.dart';
+import 'package:whatsapp_ui/view/screens/sub_screen/chats_screen.dart';
 import 'package:whatsapp_ui/view/screens/sub_screen/screen_two.dart';
 
 class ScreenOne extends StatelessWidget {
@@ -35,7 +35,7 @@ class ScreenOne extends StatelessWidget {
               title: const Text('Home'),
               trailing: const Icon(Icons.arrow_forward),
               onTap: (){
-                Navigator.pushNamed(context, HomeScreenPage.id);
+                Navigator.pushNamed(context, ChatsScreenPage.id);
               },
             ),
             ListTile(

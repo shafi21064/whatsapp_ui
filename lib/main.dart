@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp_ui/view/screens/main_screen.dart';
-import 'package:whatsapp_ui/view/screens/sub_screen/home.dart';
+import 'package:whatsapp_ui/view/screens/sub_screen/chats_screen.dart';
 import 'package:whatsapp_ui/view/screens/sub_screen/screen_one.dart';
 import 'package:whatsapp_ui/view/screens/sub_screen/screen_two.dart';
 
@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
         MainScreen.id: (context) => const MainScreen(),
         ScreenOne.id: (context) => const ScreenOne(),
         ScreenTwo.id: (context) => const ScreenTwo(),
-        HomeScreenPage.id: (context) => const HomeScreenPage(),
+        ChatsScreenPage.id: (context) => const ChatsScreenPage(),
       },
     );
   }

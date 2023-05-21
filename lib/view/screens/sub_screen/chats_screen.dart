@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-class HomeScreenPage extends StatelessWidget {
+class ChatsScreenPage extends StatelessWidget {
 
   static const String id = 'home';
 
-  const HomeScreenPage({Key? key}) : super(key: key);
+  const ChatsScreenPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

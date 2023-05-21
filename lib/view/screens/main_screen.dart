@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:whatsapp_ui/view/screens/sub_screen/home.dart';
+import 'package:whatsapp_ui/view/screens/sub_screen/chats_screen.dart';
 
 class MainScreen extends StatelessWidget {
   static const String id = 'main_screen';
@@ -49,7 +49,7 @@ class MainScreen extends StatelessWidget {
           body: const TabBarView(
             children: [
               Text('camera'),
-              HomeScreenPage(),
+              ChatsScreenPage(),
               Text('status'),
               Text('call')
             ],
