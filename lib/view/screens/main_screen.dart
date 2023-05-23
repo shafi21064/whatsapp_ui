@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp_ui/view/screens/sub_screen/chats_screen.dart';
+import 'package:whatsapp_ui/view/screens/sub_screen/call_screen.dart';
 
 class MainScreen extends StatelessWidget {
   static const String id = 'main_screen';
@@ -51,7 +52,7 @@ class MainScreen extends StatelessWidget {
               Text('camera'),
               ChatsScreenPage(),
               Text('status'),
-              Text('call')
+              CallScreenPage(),
             ],
           ),
         ));

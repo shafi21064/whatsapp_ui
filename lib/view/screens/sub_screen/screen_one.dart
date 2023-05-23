@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp_ui/view/screens/sub_screen/chats_screen.dart';
-import 'package:whatsapp_ui/view/screens/sub_screen/screen_two.dart';
+import 'package:whatsapp_ui/view/screens/sub_screen/call_screen.dart';
 
 class ScreenOne extends StatelessWidget {
   static const String id = 'screen_one';
@@ -51,7 +51,7 @@ class ScreenOne extends StatelessWidget {
               title: const Text('Home'),
               trailing: const Icon(Icons.arrow_forward),
               onTap: (){
-                Navigator.pushNamed(context, ScreenTwo.id);
+                Navigator.pushNamed(context, CallScreenPage.id);
               },
             )
           ],
@@ -60,7 +60,7 @@ class ScreenOne extends StatelessWidget {
       body: Center(
         child: TextButton(
           onPressed: () {
-            Navigator.pushNamed(context, ScreenTwo.id);
+            Navigator.pushNamed(context, CallScreenPage.id);
           },
           child: const Text(
             'Screen-1',

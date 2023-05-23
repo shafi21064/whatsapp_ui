@@ -18,7 +18,7 @@ class ChatsScreenPage extends StatelessWidget {
           ),
           title: Text('MD Shadikul Islam Shafi'),
           subtitle: Text('App developer'),
-          trailing: Text('3.15'),
+          trailing: Text('3:15 pm'),
         );
       },
     );
