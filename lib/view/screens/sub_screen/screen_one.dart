@@ -17,24 +17,21 @@ class ScreenOne extends StatelessWidget {
       drawer: Drawer(
         child: ListView(
           padding: EdgeInsets.zero,
-          children:  [
+          children: [
             const UserAccountsDrawerHeader(
-                currentAccountPicture: CircleAvatar(
-                  backgroundImage: NetworkImage(
-                          'https://cdn.pixabay.com/photo/2017/06/13/13/06/girl-2398822_960_720.jpg'),
-                ),
-                accountName: Text('Md Shadikul Islam Shafi'),
-                accountEmail: Text('mdshadikulislamshafi@gmail.com'),
-              decoration: BoxDecoration(
-                color: Colors.teal
+              currentAccountPicture: CircleAvatar(
+                backgroundImage: NetworkImage(
+                    'https://cdn.pixabay.com/photo/2017/06/13/13/06/girl-2398822_960_720.jpg'),
               ),
+              accountName: Text('Md Shadikul Islam Shafi'),
+              accountEmail: Text('mdshadikulislamshafi@gmail.com'),
+              decoration: BoxDecoration(color: Colors.teal),
             ),
-            
             ListTile(
               leading: const Icon(Icons.home),
               title: const Text('Home'),
               trailing: const Icon(Icons.arrow_forward),
-              onTap: (){
+              onTap: () {
                 Navigator.pushNamed(context, ChatsScreenPage.id);
               },
             ),
@@ -42,7 +39,7 @@ class ScreenOne extends StatelessWidget {
               leading: const Icon(Icons.home),
               title: const Text('Home'),
               trailing: const Icon(Icons.arrow_forward),
-              onTap: (){
+              onTap: () {
                 Navigator.pushNamed(context, ScreenOne.id);
               },
             ),
@@ -50,7 +47,7 @@ class ScreenOne extends StatelessWidget {
               leading: const Icon(Icons.home),
               title: const Text('Home'),
               trailing: const Icon(Icons.arrow_forward),
-              onTap: (){
+              onTap: () {
                 Navigator.pushNamed(context, CallScreenPage.id);
               },
             )
