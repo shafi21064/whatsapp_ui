@@ -16,13 +16,14 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(primarySwatch: Colors.teal),
-      initialRoute: MainScreen.id,
-      routes: {
-        MainScreen.id: (context) => const MainScreen(),
-        ScreenOne.id: (context) => const ScreenOne(),
-        CallScreenPage.id: (context) => const CallScreenPage(),
-        ChatsScreenPage.id: (context) => const ChatsScreenPage(),
-      },
+      home: MainScreen(),
+      // initialRoute: ScreenOne.id,
+      // routes: {
+      //   MainScreen.id: (context) => const MainScreen(),
+      //   ScreenOne.id: (context) => const ScreenOne(),
+      //   CallScreenPage.id: (context) => const CallScreenPage(),
+      //   ChatsScreenPage.id: (context) => const ChatsScreenPage(),
+      // },
     );
   }
 }
